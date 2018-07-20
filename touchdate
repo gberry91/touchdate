@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Datetouch is a program that creates a file with the date appened to the beginning of the file name in the format YYYYMMMDD format.
+
+dt=`date +%Y%m%d`
+filename=$1
+touchDateFile="$dt$filename"
+touch $touchDateFile
+chmod -x $touchDateFile
