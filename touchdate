@@ -4,6 +4,6 @@
 
 currentDate=`date +%Y%m%d`
 filename=$1
-touchDateFile="$currentDate$filename"
+touchDateFile="$currentDate""-""$filename"
 touch $touchDateFile
 chmod +x $touchDateFile
